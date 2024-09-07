@@ -1,101 +1,185 @@
-*{
-    background-color: #16252d;
-    color: #e8e2e2;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-
+ * {
+    /* background-color: #16252d;
+     color: white; */
+     box-sizing: border-box;
+     padding-left: 10px;
+     padding-right: 10px;
+     /*overflow-x: hidden;
+     overflow-y: none;*/
+     
+} 
 
 h2 {
-      font-size: 50px;
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: white;
-      font-weight: bold;
-      text-decoration: underline;
-      background-color: #1a3542; /* Darker background color */
-      padding: 20px; /* Increased padding */
-      margin-top: 50px; /* Added margin for spacing */
-      border-radius: 10px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-
-
-#h4 {
-      font-size: 30px;
-      display: inline-block;
-      padding-left: 70px;
-      overflow: hidden;
+       font-size: 50px;
+       text-align: center;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color:rgba(214, 131, 5, 0.908);
+       font-weight: bold;
+       text-decoration: underline;
 }
 
+#h4 {
+       font-size: 30px;
+       display: inline-block;
+       padding-left: 70px;
+       overflow: hidden;
+}
+
+
+
 P {
-      font-size: 18px;
-      overflow: hidden;
-      padding-left: 30px;
-      padding-right: 30px;
+       font-size: 18px;
+       overflow: hidden;
+       padding-left: 30px;
+       padding-right: 30px;
 }
 
 #special_para {
-      font-size: 20px;
+       font-size: 20px;
 }
 
 .my_class {
-      font-size: 28px;
-      text-decoration: dotted;
+       font-size: 28px;
+       text-decoration: dotted;
 }
 
 #Types {
-       font-size: 23px;
-       padding-left: 50px;
-       
+        font-size: 23px;
+        padding-left: 50px;
+        
 }
 
 .scroll-bg {
-     background-color: White;
-     width: 500px;
-     margin: 10% auto;
-     padding: 8px;
-     border-radius: 10px;
+      background-color: #032030;
+      width: 500px;
+      margin: 10% auto;
+      padding: 8px;
+      border-radius: 10px;
 }
 
 .scroll-div {
-     width: 478px;
-     height: 200px;
-     overflow: hidden;
-     overflow-y: scroll;
+      width: 478px;
+      height: 200px;
+      overflow: hidden;
+      overflow-y: scroll;
 }
 
 .scroll-object {
-     color: whitesmoke;
-     font-family: cursive;
-     padding: 10px;
+      color: white;
+      font-family: cursive;
+      padding: 10px;
+}
+
+#foot-greet {
+       font-size: 50px;
+       text-align: center;
 }
 
 
-footer {
-      background-color: #032030;   /* Dark blue background */
-      color: #ffffff;              /* White text color */
-      padding: 20px;                 /* Padding inside the footer */
-      text-align: center;            /* Center align text */
-      margin-top: 20px;              /* Margin from top */
-      border-radius: 10px;           /* Rounded corners */
-  }
-  
-  #foot-greet {
-      font-size: 24px;               /* Font size */
-      font-weight: bold;             /* Font weight */
-      background-color: #ffffff;   /* White background */
-      color: #000000;              /* Black text color */
-      border: 2px solid #ffffff;   /* White border */
-      padding: 10px;                 /* Padding inside the box */
-      display: inline-block;         /* Display as inline-block to wrap content */
-      border-radius: 30px;           /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  }
-  
-  
-  
-  
-  
+/* Light mode styles */
+body.light-mode {
+       background-color: rgb(216, 209, 209);
+       color: black;
+   }
+   
+   /* Dark mode styles */
+   body.dark-mode {
+       background-color: #333;
+       color: white;
+   }
+   
+   .theme-buttons {
+       /*position: fixed;*/
+       top: 10px;
+       width: 100%;
+       display: flex;
+       justify-content:space-between;
+       padding: 0 20px;
+   }
+   
+   button {
+       padding: 10px 10px;
+       cursor: pointer;
+       border: none;
+       border-radius: 10px;
+       transition: background-color 0.3s;
+   }
+   
+   #dark-mode {
+       background-color: black;
+       color: white;
+       margin-left: 10px;
+   }
+   
+   #light-mode {
+       background-color: white;
+       color: black;
+       margin-right: 10px;
+   }
+   
+   #dark-mode:hover {
+       background-color: #555;
+   }
+   
+   #light-mode:hover {
+       background-color: #ddd;
+   }
+   
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    #h4 {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #special_para {
+        font-size: 18px;
+    }
+
+    .my_class {
+        font-size: 22px;
+    }
+
+    #Types {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .scroll-bg {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .scroll-div {
+        width: 100%;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #foot-greet {
+        font-size: 30px;
+    }
+
+    /*.theme-buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+   /* button {
+        width: 80%;
+        margin: 5px 0;
+    }*/
+}
+
+   
